@@ -65,7 +65,7 @@ AppRoutingModule = __decorate([
 
 var appRoutingProviders = [];
 var appRouting = __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(appRoutes);
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/app-routing.module.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/app-routing.module.js.map
 
 /***/ }),
 
@@ -109,7 +109,7 @@ AppComponent = __decorate([
     })
 ], AppComponent);
 
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/app.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/app.component.js.map
 
 /***/ }),
 
@@ -181,7 +181,7 @@ AppModule = __decorate([
     })
 ], AppModule);
 
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/app.module.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/app.module.js.map
 
 /***/ }),
 
@@ -258,7 +258,7 @@ HighScoresComponent = __decorate([
 ], HighScoresComponent);
 
 var _a;
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/high-scores.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/high-scores.component.js.map
 
 /***/ }),
 
@@ -302,7 +302,7 @@ HomeComponent = __decorate([
     })
 ], HomeComponent);
 
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/home.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/home.component.js.map
 
 /***/ }),
 
@@ -409,7 +409,7 @@ QuestionsAnswersComponent = __decorate([
 ], QuestionsAnswersComponent);
 
 var _a;
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/questions-answers.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/questions-answers.component.js.map
 
 /***/ }),
 
@@ -475,7 +475,7 @@ QuizComponent = __decorate([
 ], QuizComponent);
 
 var _a;
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/quiz.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/quiz.component.js.map
 
 /***/ }),
 
@@ -509,7 +509,7 @@ var QuizService = (function () {
     QuizService.prototype.getQuizData = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('http://148.100.87.98:5000/api/quiz', { headers: headers }) // update url on deployment
+        return this.http.get(window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/api/quiz', { headers: headers }) // update url on deployment
             .map(function (res) { return res.json(); });
     };
     // Validate Name
@@ -525,14 +525,14 @@ var QuizService = (function () {
     QuizService.prototype.registerResult = function (result) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://148.100.87.98:5000/api/scores/save', result, { headers: headers }) // update url on deployment
+        return this.http.post(window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/api/scores/save', result, { headers: headers }) // update url on deployment
             .map(function (res) { return res.json(); });
     };
     // Get High Scores
     QuizService.prototype.getHighScores = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('http://148.100.87.98:5000/api/scores/high-scores', { headers: headers }) // update url on deployment
+        return this.http.get(window.location.protocol + '//' + window.location.hostname + ':' + window.location.port + '/api/scores/high-scores', { headers: headers }) // update url on deployment
             .map(function (res) { return res.json(); });
     };
     QuizService.prototype.quizDone = function (data) {
@@ -552,7 +552,7 @@ QuizService = __decorate([
 ], QuizService);
 
 var _a;
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/quiz.service.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/quiz.service.js.map
 
 /***/ }),
 
@@ -651,7 +651,7 @@ ResultsComponent = __decorate([
 ], ResultsComponent);
 
 var _a, _b;
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/results.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/results.component.js.map
 
 /***/ }),
 
@@ -739,7 +739,7 @@ TimerComponent = __decorate([
 ], TimerComponent);
 
 var _a;
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/timer.component.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/timer.component.js.map
 
 /***/ }),
 
@@ -756,7 +756,7 @@ var _a;
 var environment = {
     production: false
 };
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/environment.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/environment.js.map
 
 /***/ }),
 
@@ -779,7 +779,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_23" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/main.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/main.js.map
 
 /***/ }),
 
@@ -837,7 +837,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* pl
 
 
 
-//# sourceMappingURL=/home/ubuntu/QuizApp/ng-src/src/polyfills.js.map
+//# sourceMappingURL=/Users/jenn/QuizApp/ng-src/src/polyfills.js.map
 
 /***/ }),
 
