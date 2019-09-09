@@ -15,7 +15,7 @@ export class QuizService {
   getQuizData() {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:5000/api/quiz', { headers: headers }) // update url on deployment
+    return this.http.get('http://148.100.87.98:5000/api/quiz', { headers: headers }) // update url on deployment
       .map(res => res.json());
   }
   
@@ -32,7 +32,7 @@ export class QuizService {
   registerResult(result) {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:5000/api/scores/save', result, { headers: headers }) // update url on deployment
+    return this.http.post('http://148.100.87.98:5000/api/scores/save', result, { headers: headers }) // update url on deployment
       .map(res => res.json());
   }
 
@@ -40,7 +40,7 @@ export class QuizService {
   getHighScores() {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:5000/api/scores/high-scores', { headers: headers }) // update url on deployment
+    return this.http.get('http://148.100.87.98:5000/api/scores/high-scores', { headers: headers }) // update url on deployment
       .map(res => res.json());
   }
 
