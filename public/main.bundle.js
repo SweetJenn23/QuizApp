@@ -272,7 +272,7 @@ module.exports = ".home {\n    padding: 2rem 0;\n}\n.btn-start,\n.btn-scores {\n
 /***/ "./src/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center\">\n    <h1>Simple M.E.A.N. Quiz</h1>\n</div>\n<div class=\"home inner-container text-center\">\n    <h2 class=\"title\">Do you think you are smart enough?</h2>\n    <p>Let's find out. Click the Start Quiz button below to start the quiz.</p>\n    <p>You will have 1 minute to answer 10 questions.</p>\n    <button class=\"btn-start btn-primary\" routerLink=\"/quiz\">START QUIZ</button>\n    <button class=\"btn-scores btn-primary\" routerLink=\"/high-scores\">HIGH SCORES</button>\n</div>"
+module.exports = "<div class=\"text-center\">\n    <h1>Fun + Quick Quiz</h1>\n</div>\n<div class=\"home inner-container text-center\">\n    <h2 class=\"title\">How well do you know the local culture?</h2>\n    <p>Let's find out. Click the Start Quiz button below to start the quiz.</p>\n    <p>You will have 1 minute to answer 4 questions.</p>\n    <button class=\"btn-start btn-primary\" routerLink=\"/quiz\">START QUIZ</button>\n    <button class=\"btn-scores btn-primary\" routerLink=\"/high-scores\">HIGH SCORES</button>\n</div>"
 
 /***/ }),
 
