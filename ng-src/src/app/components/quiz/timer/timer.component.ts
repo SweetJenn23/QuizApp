@@ -49,7 +49,7 @@ export class TimerComponent implements OnInit {
 
     }
 
-    countdown("timer", 1, 0);
+    countdown("timer", 2, 0);
   }
 
   ngDoCheck() {
